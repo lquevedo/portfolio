@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <title>LQ | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Meera+Inimai" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="formvalidation.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="unselected">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="unselected">
+                    <a href="biography.html">Biography</a>
+                </li>
+                <li class="unselected">
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li class="unselected">
+                    <a href="codepen.html">CodePen</a>
+                </li>
+                <li class="unselected">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="selected" id="last_item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_contact">
+        <article>
+            <h1>Contact Me</h1>
+            <h2>Tel: 980-318-8236</h2>
+            <h2>Email: lquevedo47@gmail.com</h2>
+            <form name="formValidate" action="#" method="POST" onsubmit="return validateForm()">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div>
+                    <label for="comments">Questions/Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="submit_btn">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2018 Luis Quevedo.</p>
+        <a href="https://www.facebook.com/" target="_blank" class="footer_logo">
+            <img src="lib/img/facebook.png" alt="facebook logo" />
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="footer_logo">
+            <img src="lib/img/twitter.png" alt="twitter logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/luis-quevedo-109324168/" target="_blank" class="footer_logo">
+            <img src="lib/img/linkedin.png" alt="linkedin logo" />
+        </a>
+        <a href="https://www.roadtohire.org/" target="_blank" class="footer_logo" id="r2h">
+            <img src="lib/img/r2h.png" alt="roadtohire logo" />
+        </a>
+    </footer>
+</body>
+
+</html>

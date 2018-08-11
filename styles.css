@@ -1,0 +1,761 @@
+body {
+  margin: 0;
+  font-family: "Meera Inimai", sans-serif;
+  background: floralwhite;
+}
+
+/**********************************
+NAVIGATION BAR
+***********************************/
+
+nav {
+  width: 100%;
+  font-family: "Meera Inimai", sans-serif;
+  text-align: center;
+  background: black;
+  height: 3rem;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  margin: 0.7rem auto;
+  border-left: 0.05em solid white;
+}
+
+#burger {
+  display: none;
+}
+
+#last_item {
+  border-right: 1px solid white;
+}
+
+.unselected a {
+  text-decoration: none;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.selected a {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li .contact {
+  border-right: 0.05em solid white;
+}
+
+li:hover {
+  text-decoration: underline;
+  background: #17252a;
+}
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  background: black;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+}
+
+footer .footer_logo {
+  display: inline-block;
+  margin: 0;
+}
+
+footer img {
+  height: 2rem;
+  margin: 0.5rem 0.5rem;
+}
+
+#r2h {
+  margin-top: 5px;
+  display: block;
+}
+
+footer p {
+  margin: 0;
+  padding: 1rem;
+}
+
+/**********************************
+INDEX
+***********************************/
+
+header .index_banner {
+  width: 100%;
+  height: 40rem;
+  background-image: url(lib/img/snowwallpaper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: floralwhite;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 2.5rem;
+}
+
+.index_main {
+  background-image: url(lib/img/snowwallpaper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.index_desc {
+  width: 90%;
+  background-color: floralwhite;
+  text-align: center;
+  margin: 0 auto 4rem auto;
+  border-radius: 4px;
+  border: 2px solid black;
+  color: #17252a;
+  box-shadow: 5px 10px 8px #17252a;
+}
+
+.index_cards {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.index_card {
+  width: 30%;
+  height: 25rem;
+  background-color: floralwhite;
+  border-radius: 4px;
+  border: 1px solid black;
+  text-align: center;
+  box-shadow: 5px 10px 8px #17252a;
+}
+
+.index_card_logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.index_button {
+  background-color: #17252a;
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 30%;
+  transition: all 0.5s;
+}
+
+.index_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.index_button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.index_button:hover span {
+  padding-right: 20px;
+}
+
+.index_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/**********************************
+BIOGRAPHY
+***********************************/
+
+.biography_main {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.biography_article {
+  padding: 30px 0;
+}
+
+.biography_images img {
+  height: 200px;
+  width: 200px;
+}
+
+.image2 img {
+  transform: rotate(90deg);
+}
+
+.biography_images {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.biography_images .polaroid {
+  position: absolute;
+  border: 1px solid darkgrey;
+  background-color: white;
+  padding: 15px 15px 60px 15px;
+  box-shadow: 5px 10px 10px darkgrey;
+  transform: rotate(5deg);
+}
+
+.biography_images .polaroid:after {
+  content: attr(polaroid-caption);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 90%;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Meera Inimai", sans-serif;
+}
+
+.biography_images .image1 {
+  left: -50px;
+  top: 100px;
+  transform: rotate(-20deg);
+}
+
+.biography_images .image2 {
+  left: 200px;
+  top: 100px;
+}
+
+/**********************************
+RESUME
+***********************************/
+
+.resume {
+  text-align: center;
+}
+
+.resume_profile {
+  width: 80%;
+  height: 30rem;
+  background: #17252a;
+  margin: 3rem auto 1rem auto;
+  border-radius: 2px;
+  box-shadow: 5px 10px 8px #888888;
+  display: flex;
+  color: floralwhite;
+}
+
+.resume_profile_image {
+  width: 30%;
+  background-image: url(lib/img/portrait.jpg);
+  background-size: cover;
+}
+
+.resume_profile_info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.resume_profile_info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume_profile_info li {
+  padding: 1rem 0;
+}
+
+.resume_skills {
+  width: 80%;
+  height: 10rem;
+  background: #17252a;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 5px 10px 8px #888888;
+  color: floralwhite;
+}
+
+.resume_skills p {
+  padding: 2rem 3rem;
+}
+
+.resume_experience {
+  width: 80%;
+  height: 20rem;
+  background: #17252a;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 5px 10px 8px #888888;
+  display: flex;
+  color: floralwhite;
+}
+
+.resume_experiences {
+  border-right: 1px solid floralwhite;
+  width: 34%;
+  padding: 1rem;
+}
+
+.resume_education {
+  width: 80%;
+  height: 20rem;
+  background: #17252a;
+  margin: 2rem auto;
+  border-radius: 2px;
+  box-shadow: 5px 10px 8px #888888;
+  display: flex;
+  color: floralwhite;
+}
+
+.resume_education_logo {
+  width: 30%;
+  background: floralwhite;
+  border: 1px solid #17252a;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume_education_logo img {
+  height: 10rem;
+}
+
+.resume_education_info {
+  width: 70%;
+}
+
+.resume_education_info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume_education_info li {
+  padding: 1rem 2em;
+}
+/**********************************
+CODEPEN
+***********************************/
+
+.codepen_sections {
+  display: flex;
+  color: floralwhite;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.cp_section {
+  width: 34%;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.codepen_section1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(lib/img/screenshot1.png);
+  background-size: cover;
+  background-position: center;
+  border-right: 1px solid floralwhite;
+}
+
+.codepen_section2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(lib/img/screenshot2.png);
+  background-size: cover;
+  background-position: center;
+  border-right: 1px solid floralwhite;
+}
+
+.codepen_section3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(lib/img/screenshot3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.codepen_sections h2 {
+  font-size: 2.5rem;
+}
+
+.codepen_sections p {
+  font-size: 1.2rem;
+}
+
+.codepen_button {
+  background-color: #17252a;
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 30%;
+  transition: all 0.5s;
+}
+
+.codepen_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.codepen_button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.codepen_button:hover span {
+  padding-right: 20px;
+}
+
+.codepen_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/**********************************
+GALLERY
+***********************************/
+.gallery_sections {
+  display: flex;
+}
+
+.gallery img {
+  height: 300px;
+  width: 100%;
+}
+
+figure {
+  background: #17252a;
+  color: floralwhite;
+  text-align: center;
+  box-shadow: 5px 10px 8px #888888;
+  width: 100%;
+  margin: 1rem 1rem;
+}
+
+figcaption {
+  padding: 1rem;
+}
+
+/**********************************
+CONTACT
+***********************************/
+
+.main_contact {
+  text-align: center;
+}
+
+.main_contact h1 {
+  font-size: 2.5em;
+}
+
+input {
+  width: 25%;
+  padding: 10px 8px;
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  width: 25%;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.submit_btn input {
+  background-color: navajowhite;
+  border: 2px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 10%;
+  border-radius: 8px;
+}
+
+.submit_btn input:hover {
+  background-color: antiquewhite;
+}
+
+/**********************************
+MEDIA QUERIES
+***********************************/
+
+@media only screen and (max-width: 900px) {
+  /**********************************
+INDEX
+***********************************/
+
+  nav {
+    height: 100%;
+    font-size: 1rem;
+    background: #888888;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .index_card {
+    width: 30%;
+    margin: 2rem auto;
+  }
+
+  #burger {
+    display: block;
+    width: 5rem;
+  }
+
+  /**********************************
+RESUME
+***********************************/
+
+  .resume {
+    width: 100%;
+  }
+
+  .resume_profile_image {
+    width: 80%;
+    height: 100%;
+    background-image: url(lib/img/portrait.jpg);
+    background-size: cover;
+  }
+
+  .resume_profile_info {
+    width: 80%;
+  }
+
+  .resume_skills {
+    width: 80%;
+    height: 100%;
+  }
+
+  .resume h2 {
+    margin: 3rem auto;
+  }
+
+  .resume_experience {
+    display: block;
+    height: 100%;
+  }
+
+  .resume_experiences {
+    width: 80%;
+    margin: 2rem auto;
+    border-bottom: 1px solid floralwhite;
+    border-right: none;
+  }
+
+  .resume_education {
+    width: 80%;
+  }
+
+  .resume_education_logo {
+    display: none;
+  }
+
+  .resume_education_info {
+    width: 100%;
+  }
+
+  /**********************************
+GALLERY
+***********************************/
+
+  .gallery_sections {
+    display: inline-block;
+    width: 90%;
+  }
+
+  .gallery img {
+    height: 500px;
+    width: 100%;
+  }
+
+  /**********************************
+CONTACT
+***********************************/
+
+  .main_contact h2 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    width: 40%;
+    border: 1px solid #17252a;
+  }
+
+  label {
+    margin-top: 3rem;
+  }
+
+  textarea {
+    width: 40%;
+    border: 2px solid #ccc;
+  }
+
+  .submit_btn {
+    margin: 2rem 0;
+  }
+
+  .submit_btn input {
+    width: 25%;
+  }
+
+  .submit_btn input:hover {
+    background-color: antiquewhite;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /**********************************
+INDEX
+***********************************/
+
+    nav {
+      height: 6rem;
+    }
+
+    .index_main {
+      height: 100%;
+    }
+
+    .index_cards {
+      display: block;
+      height: 100%;
+    }
+
+    .index_card {
+      width: 80%;
+      margin: 2rem auto;
+    }
+
+    /**********************************
+BIOGRAPHY
+***********************************/
+
+    .biography_images .image1 {
+      left: -100px;
+    }
+
+    .biography_images .image2 {
+      left: 0px;
+      top: 0px;
+    }
+
+    /**********************************
+RESUME
+***********************************/
+
+    .resume_profile {
+      color: #17252a;
+      display: inline-block;
+    }
+
+    .resume_profile_image {
+      width: 100%;
+      height: 500px;
+      background-image: url(lib/img/portrait.jpg);
+      background-size: cover;
+    }
+
+    /**********************************
+CODEPEN
+***********************************/
+
+    .codepen_sections {
+      display: inline-block;
+    }
+
+    .cp_section {
+      width: 100%;
+      border-bottom: 1px solid floralwhite;
+    }
+
+    /**********************************
+GALLERY
+***********************************/
+    .gallery {
+      width: 80%;
+      margin: 1rem auto;
+    }
+
+    .gallery_sections {
+      width: 100%;
+    }
+
+    .gallery_sections img {
+      height: 300px;
+    }
+
+    figure {
+      margin: 1rem auto;
+    }
+
+    /**********************************
+CONTACT
+***********************************/
+
+    input {
+      width: 60%;
+    }
+
+    textarea {
+      width: 60%;
+    }
+
+    .submit_btn input {
+      width: 40%;
+    }
+
+    .main_contact h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
