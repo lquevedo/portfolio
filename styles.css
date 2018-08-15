@@ -460,21 +460,48 @@ GALLERY
 }
 
 .gallery img {
-  height: 300px;
   width: 100%;
+  height: 100%;
 }
 
 figure {
+  height: 350px;
   background: #17252a;
   color: floralwhite;
   text-align: center;
   box-shadow: 5px 10px 8px #888888;
   width: 100%;
   margin: 1rem 1rem;
+  position: relative;
 }
 
-figcaption {
-  padding: 1rem;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.748);
+}
+
+figure:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /**********************************
